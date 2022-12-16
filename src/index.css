@@ -1,0 +1,43 @@
+body {
+  margin: 0;
+  background-color: hsl(345, 100%, 15%);
+  cursor: url("https://i.guim.co.uk/img/static/sys-images/Media/Pix/pictures/2007/07/23/MarkZuckerberg128.jpg?width=465&quality=85&dpr=1&s=none"), auto;
+}
+a:hover{
+  cursor: url("https://static.ffx.io/images/$zoom_0.9919782445611404%2C$multiply_0.254%2C$ratio_1%2C$width_378%2C$x_789%2C$y_191/t_crop_custom/q_86%2Cf_auto/2641bbf27de5776f28fb3faff0080f662ef3b5f8"), auto;
+}
+a:visited{
+  color: yellow;
+}
+
+
+.whiteNoise {
+  position: fixed;
+  top: -60%;
+  left: -60%;
+  right: -60%;
+  bottom: -40%;
+  
+  background: url('http://assets.iceable.com/img/noise-transparent.png') repeat;
+  
+
+  animation: whiteNoiseAnimation .6s infinite;
+  opacity: 0.85;
+  
+  z-index: 2;
+}
+
+@keyframes whiteNoiseAnimation {
+    0% { transform: translate(0,0) }
+    10% { transform: translate(-10%,-10%) }
+    20% { transform: translate(-20%,10%) }
+    30% { transform: translate(10%,-20%) }
+    40% { transform: translate(-10%,30%) }
+    50% { transform: translate(-20%,10%) }
+    60% { transform: translate(30%,0) }
+    70% { transform: translate(0,20%) }
+    80% { transform: translate(-30%,0) }
+    90% { transform: translate(20%,10%) }
+    100% { transform: translate(10%,0) }
+}
+

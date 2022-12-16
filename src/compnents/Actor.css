@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Roboto+Mono:wght@100&display=swap');
+
+.Actor{
+    color: #FFF;
+    font-family: "IBM Plex Mono";
+    font-weight: 100;
+    z-index: 5;
+}
+
+a{
+    text-decoration: none;
+   
+}
+a:hover{
+    cursor: url('./cursor_hover4.jpg');
+}

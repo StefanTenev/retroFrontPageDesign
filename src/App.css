@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@500&family=Roboto+Mono:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rubik+80s+Fade&display=swap');
+/* to use: Rubik 80s Fade' */
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+/* to use: 'Press Start 2P' */
+
+.App h3{
+  color: #FFF;
+  text-align: center;
+  font-family: "IBM Plex Mono";
+    font-weight: 100;
+}
+
+.actorsContainer{
+  display: flex;
+  justify-content: center;
+  gap: 10rem;
+  font-size: 1.3rem;
+
+}
+
+.intro{
+  color: #FFF;
+  font-family: "IBM Plex Mono";
+  font-size: 0.8rem;
+  text-align: center;
+  margin-top: 5.5rem;
+}
+
+.vhs-time-track{
+  width: 95%;
+  display: flex;
+  justify-content:space-around;
+  gap: 8%;
+  font-family: 'Press Start 2P';
+  color: rgb(230, 230, 230);
+  animation: vhs-skew 10s infinite
+}
+
+h4{
+  width: 50%;
+  margin-left: 20%;
+  font-family: 'Press Start 2P';
+  color: rgb(230, 230, 230);
+  animation: vhs-skew 10s infinite
+}
+
+h4 span{
+  margin: 0.25rem;
+  font-size: 1.5rem;
+}
+
+
+@keyframes vhs-skew {
+  
+  10% {transform: skew(0);}
+  11% {transform: skew(-20deg);}
+  11.5% {transform: skew(0);}
+  39% {opacity: 1;}
+  39.1% {opacity: 0.2;}
+  39.3% {opacity: 1;}
+  55% {opacity: 1;}
+  55.1% {opacity: 0.2;}
+  55.3% {opacity: 1;}
+  78% {transform: skew(0);}
+  78.5% {transform: skew(-20deg);}
+  79% {transform: skew(0);}
+  79.5% {transform: skew(-20deg);}
+  80% {transform: skew(-30deg);}
+  82% {transform: skew(-30deg);}
+  82.3% {transform: skew(0);}
+
+  90% {opacity: 1;}
+  90.2% {opacity: 0.25;}
+  90.4% {opacity: 1;}
+}
+
+.whiteLine{
+  position: fixed;
+  height: 1px;
+  width: 70%;
+  background-color: rgb(201, 201, 201);
+  animation: whiteLineAnimation 10s infinite;
+  opacity: 0;
+}
+
+@keyframes whiteLineAnimation{
+  /* line appearing 1 */
+  10% { 
+        transform: translate(0,0);
+        opacity: 0 
+      }
+  10.5% { 
+          transform: translate(0,5rem);
+          opacity: 1 
+        }
+  11% {
+        opacity: 0;
+        transform: translate(0,0);
+      }
+/* line appearing 2 */
+  44% { 
+        transform: translate(30rem,15rem);
+        opacity: 0 
+      }
+  
+  44.5% { 
+          transform: translate(30rem,5rem);
+          opacity: 1 
+        }
+  45% {
+        opacity: 0;
+        transform: translate(30rem,8rem);
+      }
+/* line appearing 3 */
+  78% { 
+        transform: translate(0,0);
+        opacity: 0 
+      }
+  78.5% { 
+          transform: translate(0,15rem);
+          opacity: 1 
+        }
+  79% {
+        opacity: 0;
+        transform: translate(0,0);
+      }
+/* line appearing 4 */
+  92% { 
+        transform: translate(0rem,30rem);
+        opacity: 0 
+      }
+  
+  92.5% { 
+          transform: translate(0rem,20rem);
+          opacity: 1 
+        }
+  93%   {
+        opacity: 0;
+        transform: translate(0rem,35rem);
+        }
+
+  
+}
